@@ -16,6 +16,8 @@ export class AppComponent {
   showErrorModal = false;
   disableOrderButton = true;
   isLoading = false;
+  onSubshop = true;
+  onBurgers = false;
 
   item: ItemResponse | undefined;
 
@@ -43,5 +45,14 @@ export class AppComponent {
       this.disableOrderButton = true;
       this.isLoading = false;
     });
+  }
+
+  onSubshopClick() {
+    [this.onSubshop, this.onBurgers] = [true, false];
+  }
+
+  onBurgersClick() {
+    [this.onSubshop, this.onBurgers] = [false, true];
+
   }
 }
