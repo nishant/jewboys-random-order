@@ -1,0 +1,10 @@
+**/*.log
+**/logs
+**/tmp
+**/coverage
+**/node_modules
+**/.DS_Store
+**/.idea
+**/*.iml
+**/.vscode
+**/dist
